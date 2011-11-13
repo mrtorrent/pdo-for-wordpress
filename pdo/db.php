@@ -110,11 +110,22 @@ class pdo_db extends wpdb {
 	 *	similarly, using mysql_escape_string() (which you would think would be logical) screws things up to.
 	 *	basically does not honour line terminators.
 	 *
-	 *	@param $string	string	the variable to be escaped
+	 * @param string|array $data to escape
 	 *	@return	string	escaped variable
 	 */
-	function escape($string) {
-		return addslashes($string);
+	function escape($data) {
+		if (is_array($data)) {
+			foreach ($data as $k => $v) {
+				if (is_array($v))
+					$data[$k] = $this->escape($v);
+				else
+					$data[$k] = addslashes($v);
+			}
+		} else {
+			$data = addslashes($data);
+		}
+
+		return $data;
 	}
 	
 	/**
