@@ -37,7 +37,6 @@ So ... to install PDO For Wordpress please do the following:
 	->themes  
 	->pdo  
 	db.php  
-	index.php[maybe]  
 
 	The key thing is the presence of the pdo directory and the db.php file in the 'root' of the wp-content directory.
 
@@ -63,15 +62,15 @@ What databases are supported?
 
 Currently the basic layer supports any database that is supported by PDO.
 
-*	MS SQL Server (PDO) â  Microsoft SQL Server and Sybase Functions (PDO_DBLIB)  
-*	Firebird/Interbase (PDO) â  Firebird/Interbase Functions (PDO_FIREBIRD)  
-*	IBM (PDO) â  IBM Functions (PDO_IBM)  
-*	Informix (PDO) â  Informix Functions (PDO_INFORMIX)  
-*	MySQL (PDO) â  MySQL Functions (PDO_MYSQL)  
-*	Oracle (PDO) â  Oracle Functions (PDO_OCI)  
-*	ODBC and DB2 (PDO) â  ODBC and DB2 Functions (PDO_ODBC)  
-*	PostgreSQL (PDO) â  PostgreSQL Functions (PDO_PGSQL)  
-*	SQLite (PDO) â  SQLite Functions (PDO_SQLITE)  
+*	MS SQL Server (PDO) ï¿½  Microsoft SQL Server and Sybase Functions (PDO_DBLIB)  
+*	Firebird/Interbase (PDO) ï¿½  Firebird/Interbase Functions (PDO_FIREBIRD)  
+*	IBM (PDO) ï¿½  IBM Functions (PDO_IBM)  
+*	Informix (PDO) ï¿½  Informix Functions (PDO_INFORMIX)  
+*	MySQL (PDO) ï¿½  MySQL Functions (PDO_MYSQL)  
+*	Oracle (PDO) ï¿½  Oracle Functions (PDO_OCI)  
+*	ODBC and DB2 (PDO) ï¿½  ODBC and DB2 Functions (PDO_ODBC)  
+*	PostgreSQL (PDO) ï¿½  PostgreSQL Functions (PDO_PGSQL)  
+*	SQLite (PDO) ï¿½  SQLite Functions (PDO_SQLITE)  
 
 Note that through the PDO_ODBC extension, all ODBC supported databases are also supported, subject to drivers being available
 
